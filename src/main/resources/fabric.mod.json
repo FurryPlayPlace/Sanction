@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "testplugin",
+  "version": "${version}",
+  "name": "TestPlugin",
+  "description": "Example Cotton plugin",
+  "authors": ["Author"],
+  "contact": {
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/cottonframework/icon.png",
+  "environment": "server",
+  "entrypoints": {},
+  "mixins": [],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
