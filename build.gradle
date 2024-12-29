@@ -16,7 +16,7 @@ loom {
     splitEnvironmentSourceSets()
 
     mods {
-        "cottonplugintemplate" {
+        "sanction" {
             sourceSet sourceSets.main
             sourceSet sourceSets.client
         }
@@ -47,6 +47,8 @@ dependencies {
 
     compileOnly('net.furryplayplace:CottonFramework:1.0.13:dev')
     compileOnly('net.furryplayplace:CottonFramework:1.0.13:sources')
+    compileOnly("org.apache.commons:commons-dbcp2:2.1.1")
+    compileOnly("mysql:mysql-connector-java:5.1.38")
 }
 
 tasks.register('shadowJar1', ShadowJar) {
@@ -94,8 +96,8 @@ java {
 jar {
     manifest {
         attributes(
-                'Plugin-Main-Class': 'com.example.TestPlugin',
-                'Plugin-Name': 'TestPlugin'
+                'Plugin-Main-Class': 'net.furryplayplace.sanction.Sanction',
+                'Plugin-Name': 'Sanction'
         )
     }
 }

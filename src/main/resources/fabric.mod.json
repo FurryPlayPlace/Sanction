@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "id": "testplugin",
-  "version": "${version}",
-  "name": "TestPlugin",
+  "id": "sanction",
+  "version": "1.0.0",
+  "name": "Sanction",
   "description": "Example Cotton plugin",
   "authors": ["Author"],
   "contact": {

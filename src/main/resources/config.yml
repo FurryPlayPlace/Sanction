@@ -1,4 +1,19 @@
-spawn:
-  x: 0.0
-  Y: 80.0
-  z: 0.0
+server-name: FurryPlayPlace
+
+mysql:
+  url: jdbc:mysql://localhost:3306/database
+  username: exampleUsername
+  password: examplePassword
+
+sanctionUpdateTask:
+  initialDelay: 1
+  period: 1
+  unit: "MINUTES"
+
+listeners:
+  onJoinCheck:
+    enabled: false
+    bannedMessage: "You are banned from %server% by %author% for %reason% until: %expiration%"
+  onChatCheck:
+    enabled: false
+    seeGhost: false
